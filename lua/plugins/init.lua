@@ -29,7 +29,7 @@ return {
         dap = {
           adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path),
         },
-      } 
+      }
     end
   },
   -- rust debugger
@@ -53,7 +53,7 @@ return {
   },
   -- rust debugger ui
   {
-    'rcarriga/nvim-dap-ui', 
+    'rcarriga/nvim-dap-ui',
     dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
     config = function()
 			require("dapui").setup()
